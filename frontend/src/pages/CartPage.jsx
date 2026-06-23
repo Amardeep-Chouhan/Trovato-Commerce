@@ -19,6 +19,7 @@ function CartPage() {
   const {
     checkout,
     checkoutLoading,
+    checkoutError,
     items,
     lines,
     productsError,
@@ -148,6 +149,11 @@ function CartPage() {
                 {checkoutLoading ? "Opening checkout…" : "Checkout securely"}
               </button>
             </Show>
+            {checkoutError ? (
+              <div role="alert" className="mt-4 rounded-box border border-error bg-error/10 px-4 py-3 text-sm text-error">
+                {checkoutError}
+              </div>
+            ) : null}
 
             <Show when="signed-out">
               <SignInButton mode="modal">
