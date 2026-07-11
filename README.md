@@ -5,7 +5,6 @@ A modern full-stack e-commerce platform built with React, TypeScript, Express.js
 Trovato combines a production-ready shopping experience with secure authentication, payments, customer support chat, video calling, monitoring, and scalable backend architecture.
 
 ---
-![Demo App](/frontend/public/screenshot-for-readme.png)
 
 ## 🚀 Live Demo
 
